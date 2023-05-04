@@ -8,6 +8,6 @@ public interface IConfigLoadable {
      * By default, this method will try to call this method (loadValue) on any field that is annotated with {@link LoadableNonSaveable}.
      */
     default void loadValue() {
-        ConfigLoadableSavableExecuter.executeLoadOrSave(LoadableNonSaveable.class, "loadValue", this);
+        ConfigLoadableSavableExecuter.executeLoad(this);
     }
 }

@@ -11,6 +11,6 @@ public interface IConfigSavable {
     @SideEffectFree
     @SuppressWarnings({"purity.more.pure","purity.more.deterministic","purity.not.sideeffectfree.call"})
     default void saveValue(){
-        ConfigLoadableSavableExecuter.executeLoadOrSave(NonLoadableSavable.class, "saveValue", this);
+        ConfigLoadableSavableExecuter.executeSave(this);
     }
 }
