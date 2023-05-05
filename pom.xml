@@ -11,7 +11,7 @@
 
     <groupId>com.c0d3m4513r.config</groupId>
     <artifactId>qual</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2${snapshot}</version>
 
     <licenses>
         <license>
@@ -50,6 +50,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <snapshot/>
     </properties>
     <dependencies>
         <dependency>
